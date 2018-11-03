@@ -34,7 +34,9 @@
     "url": "https://github.com/PanJiaChen/vue-element-admin/issues"
   },
   "dependencies": {
+    "@syncfusion/ej2-vue-grids": "^16.3.30",
     "axios": "0.18.0",
+    "bootstrap-vue": "^2.0.0-rc.11",
     "clipboard": "1.7.1",
     "codemirror": "5.39.2",
     "connect": "3.6.6",

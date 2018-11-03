@@ -59,5 +59,25 @@ export default {
       two: 'Two',
       three: 'Three'
     }
+  },
+  ru: {
+    i18nView: {
+      title: 'Сменить язык',
+      note: 'Интернализация основа на vue-i18n',
+      datePlaceholder: 'Выбор дня',
+      selectPlaceholder: 'Выбор',
+      tableDate: 'tableDate',
+      tableName: 'tableName',
+      tableAddress: 'tableAddress',
+      default: 'по умолчания:',
+      primary: 'первыичное',
+      success: 'успешно',
+      info: 'информация',
+      warning: 'предупреждение',
+      danger: 'опасность',
+      one: 'Один',
+      two: 'Два',
+      three: 'Три'
+    }
   }
 }

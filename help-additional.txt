@@ -1,0 +1,35 @@
+https://bootstrap-vue.js.org
+
+
+npm i bootstrap-vue
+
+insert into src/main.js:
+
+
+import BootstrapVue from 'bootstrap-vue'
+
+Vue.use(BootstrapVue);
+
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+
+npm install element-ui -S
+
+
+import Vue from 'vue'
+import Element from 'element-ui'
+
+Vue.use(Element)
+
+// or
+import {
+  Select,
+  Button
+  // ...
+} from 'element-ui'
+
+Vue.component(Select.name, Select)
+Vue.component(Button.name, Button)
+
+http://element.eleme.io/#/en-US

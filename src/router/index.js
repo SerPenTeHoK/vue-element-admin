@@ -76,6 +76,53 @@ export const constantRouterMap = [
     ]
   },
   {
+    path: '/docum_reports',
+    component: Layout,
+    redirect: '/docum_reports/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/docum_reports/index'),
+        name: 'DocReports',
+        meta: { title: 'Отчёты', icon: 'documentation', noCache: true }
+      }
+    ]
+  },
+  {
+    path: '/docum_request',
+    component: Layout,
+    redirect: '/docum_request/index',
+    meta: {
+      title: 'Заявки',
+      icon: 'example'
+    },
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/docum_request/index'),
+        name: 'DocReports',
+        meta: { title: 'Поиск', icon: 'documentation', noCache: true }
+      },
+      {
+        path: 'request_data',
+        component: () => import('@/views/docum_request/request_data'),
+        name: 'RequestData',
+        meta: { title: 'Данные', noCache: true },
+        hidden: false // make true for prod
+      },
+      {
+        path: 'directive',
+        component: () => import('@/views/permission/directive'),
+        name: 'DirectivePermission',
+        meta: {
+          title: 'directivePermission'
+          // if do not set roles, means: this page does not require permission
+        }
+      }
+    ]
+  },
+
+  {
     path: '/documentation',
     component: Layout,
     redirect: '/documentation/index',
